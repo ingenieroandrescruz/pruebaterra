@@ -11,7 +11,7 @@ resource "azurerm_resource_group" "rg" {
 module "storage" {
   source = "./modules/storage-account"
 
-  storage_account_name = "stgdemoterraform001"
+  storage_account_name = "mystgcicdbext"
   resource_group_name  = azurerm_resource_group.rg.name
   location             = azurerm_resource_group.rg.location
 }
